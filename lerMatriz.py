@@ -1,11 +1,11 @@
 def ler_matriz(arquivo):
     with open(arquivo, 'r') as f:
-        linhas = int(f.readline())  # Número de linhas
-        colunas = int(f.readline())  # Número de colunas
+        linhas = int(f.readline())  
+        colunas = int(f.readline())  
         
         matriz = []
         for _ in range(linhas):
-            linha = list(map(float, f.readline().split()))  # Lê uma linha da matriz e converte para floats
-            matriz.append(linha)  # Adiciona a linha à matriz
+            linha = list(map(float, f.readline().split()))  
+            matriz.append(linha)
             
     return matriz, int(linhas), int(colunas)

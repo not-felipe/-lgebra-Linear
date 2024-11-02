@@ -14,4 +14,7 @@ def multiplicar_escalar(m1, l1, c1, escalar):
   return resultado
 
 matriz_multiplicada = multiplicar_escalar(matriz1, linhasMatriz1, colunasMatriz1, escalar)
-print(matriz_multiplicada)
+
+
+for linha in matriz_multiplicada:
+  print(linha)
