@@ -5,7 +5,7 @@ def ler_matriz(arquivo):
         
         matriz = []
         for _ in range(linhas):
-            linha = list(map(float, f.readline().split()))  # Lê uma linha da matriz e converte para inteiros
+            linha = list(map(float, f.readline().split()))  # Lê uma linha da matriz e converte para floats
             matriz.append(linha)  # Adiciona a linha à matriz
             
     return matriz, int(linhas), int(colunas)
